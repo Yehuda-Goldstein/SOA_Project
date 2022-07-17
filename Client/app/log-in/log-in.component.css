@@ -1,0 +1,25 @@
+h1 {
+  text-align: center;
+}
+.menu {
+  text-decoration: dotted;
+  color: navy;
+  font-size: 25px;
+  position:absolute; left:80px; top:20px;
+}
+
+.form-control {
+  background-color: #f1d00a;
+  padding: 10px;
+  position: relative;left:520px; top:70px;
+  border-radius: 8px;
+
+}
+.btn-default {
+  padding: 8px;
+  position: relative;left:590px; top:100px;
+}
+.btn-default:hover {
+  background-color: #66bfbf;
+}
+

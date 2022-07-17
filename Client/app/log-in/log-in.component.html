@@ -1,0 +1,42 @@
+<h1>
+  Hello and welcome to:<br />
+  sela TalkBack<br />
+  Messanger
+</h1>
+<div class="row">
+  <div class="form-group">
+    <div>
+      <input
+        name="userName"
+        ngModel
+        pattern="[a-zA-Z ]*"
+        class="form-control"
+        type="text"
+        #usernameInput
+        placeholder="Enter user name"
+        required
+      />
+      <br />
+      <br />
+    </div>
+    <div>
+      <input
+        class="form-control"
+        type="password"
+        #passwordInput
+        placeholder="Enter password"
+      />
+    </div>
+    <div>
+      <br />
+      <button
+        class="btn btn-default"
+        (click)="CreateUser(usernameInput.value, passwordInput.value)"
+      >
+        Sign In
+      </button>
+    </div>
+    <button class="menu"> &#9776;
+    </button>
+  </div>
+</div>

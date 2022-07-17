@@ -1,0 +1,28 @@
+.user-item {
+  width: 280px;
+  border-radius: 10px;
+  border: solid 1px lightgray;
+  padding: 10px;
+  margin-left: 0px;
+  cursor: pointer;
+}
+.user-item:hover {
+  background-color: #74959a;
+}
+.selected {
+  background-color: lightblue;
+}
+
+.row {
+  padding: 10px;
+}
+/* .history {
+  width: 280px;
+  border-radius: 10px;
+  border: solid 1px lightgray;
+  position: absolute;
+  left: 440px;
+  top: 20px;
+  height: 416px;
+  overflow-y: auto;
+} */

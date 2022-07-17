@@ -1,0 +1,28 @@
+<h3>Connected Users:</h3>
+<div class="row" *ngFor="let user of usersConnected">
+  <div
+    class="row user-item"
+    (click)="onItemClicked(user)"
+    [ngClass]="{ selected: userSelected && userSelected.name == user.name }"
+  >
+    <div>
+      {{ user.name }}
+      🟢
+    </div>
+  </div>
+</div>
+<h3>DisConnected Users:</h3>
+<div class="row" *ngFor="let user of usersDisConnected">
+  <div>
+    {{ user.name }}
+    🔴
+  </div>
+</div>
+<div class="rows" *ngFor="let msg of messages">
+  <div class="history">
+    You got this message from {{msg.sender}} to {{msg.reciver}}
+    this is the content- {{ msg.message }}
+  </div>
+</div>
+<!-- <app-chat [user]= "userSelected" [historyMsg]= "messages" ></app-chat> -->
+<app-chat [user]= "userSelected" ></app-chat>
